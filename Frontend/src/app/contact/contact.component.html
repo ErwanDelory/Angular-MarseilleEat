@@ -1,0 +1,50 @@
+<section class="container">
+  <br />
+  <form class="was-validated">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Adresse email</label>
+      <input
+        type="email"
+        class="form-control is-invalid"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Adresse email"
+        required
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >Nous ne partagerons jamais votre adresse mail !</small
+      >
+    </div>
+    <div class="row form-group">
+      <div class="col">
+        <label for="exampleInputPassword1">Nom</label>
+        <input
+          type="text"
+          class="form-control is-invalid"
+          placeholder="Nom de famille"
+          required
+        />
+      </div>
+      <div class="col">
+        <label for="exampleInputPassword1">Nom</label>
+        <input
+          type="text"
+          class="form-control is-invalid"
+          placeholder="Prénom"
+          required
+        />
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="validationTextarea">Message</label>
+      <textarea
+        class="form-control is-invalid"
+        id="validationTextarea"
+        placeholder="Saisir votre message ..."
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-info">Envoyer</button>
+  </form>
+</section>

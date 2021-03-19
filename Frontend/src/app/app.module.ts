@@ -7,6 +7,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ContactComponent } from './contact/contact.component';
+import { ProposComponent } from './propos/propos.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +21,19 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
     NavbarComponent,
     HomeComponent,
     RestaurantComponent,
-    RestaurantListComponent
+    RestaurantListComponent,
+    ContactComponent,
+    ProposComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

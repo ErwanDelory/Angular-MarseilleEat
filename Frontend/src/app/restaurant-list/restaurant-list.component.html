@@ -1,1 +1,7 @@
-<p>restaurant-list works!</p>
+<section class="container">
+  <br />
+  <h2>Liste des restaurants !</h2>
+  <div *ngFor="let resto of restos">
+    <app-restaurant [data]="resto"></app-restaurant>
+  </div>
+</section>

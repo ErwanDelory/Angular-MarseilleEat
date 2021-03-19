@@ -1,1 +1,15 @@
-<p>restaurant works!</p>
+<div class="container">
+  <mat-card class="card resto-card">
+    <mat-card-title>{{ data.nom }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ data.adresse }} - {{ data.codePostal }}</mat-card-subtitle
+    >
+
+    <mat-card-content>
+      <p>
+        Note: <strong>{{ data.moyenne | number: "0.01" }}/5</strong>
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <br />
+</div>
